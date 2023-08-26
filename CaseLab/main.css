@@ -1,0 +1,161 @@
+* {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #cfecd0, #ffc5ca);
+}
+
+:root {
+  --btn-color: #ffc5ca;
+  --btn-hoverColor: #c79a9d;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  background-color: rgb(59, 202, 200);
+  padding: 30px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  max-width: 500px;
+  cursor: pointer;
+  height: auto !important;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card__title {
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+.card__title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+}
+
+.card__addTodoButton {
+  margin-top: 10px;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  background-color: var(--btn-color);
+  max-width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.card__addTodoButton:hover {
+  background-color: var(--btn-hoverColor);
+}
+
+.card__todoText {
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  border: none !important;
+}
+
+.card__todoText:focus {
+  outline: none !important;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.content__card {
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: azure;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+.content__card:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.content__card:last-child {
+  margin-bottom: 0px;
+}
+.content__cardText {
+  word-break: break-all;
+  flex: 1 1 auto;
+}
+.content__deleteBtn {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px;
+  background-color: var(--btn-color);
+  color: white;
+  border-radius: 5px;
+  transition: all 0.3s;
+  flex: 0 0;
+}
+.content__deleteBtn:hover {
+  background-color: var(--btn-hoverColor);
+}
+
+.problem-container {
+  padding: 10px;
+}
+.problem-row {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+.problem-btn {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  background-color: var(--btn-color);
+  transition: all 0.3s;
+}
+.problem-btn:hover {
+  background-color: var(--btn-hoverColor);
+}
+
+.even {
+  box-shadow: 10px 10px 10px rgba(237, 31, 241, 0.7);
+}
+.odd {
+  box-shadow: 10px 10px 10px rgba(134, 230, 16, 0.7);
+}
+
+.content__completeBtn {
+  display: flex;
+  justify-content: end;
+  flex: 0 0;
+  padding: 10px;
+  background-color: rgb(27, 72, 116);
+  margin-left: 10px;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s;
+}
+.content__completeBtn:hover{
+    background-color: rgb(16, 41, 67);;
+}
+
